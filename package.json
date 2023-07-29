@@ -1,5 +1,5 @@
 {
-  "name": "aa-demo-react",
+  "name": "zkproof-demo-react",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint src --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "compile:circuit:asset": "circom circuit.circom -r circuit.r1cs -w circuit.wasm -s circuit.sym"
   },
   "dependencies": {
     "@chakra-ui/anatomy": "^2.1.1",
@@ -20,9 +21,9 @@
     "@esbuild-plugins/node-modules-polyfill": "^0.2.2",
     "@rainbow-me/rainbowkit": "^0.12.12",
     "@reduxjs/toolkit": "^1.9.5",
-    "@spruceid/ssx": "^1.2.5",
     "axios": "^0.25.0",
     "buffer": "^6.0.3",
+    "circomlib": "^2.0.5",
     "date-fns": "^2.30.0",
     "esbuild": "^0.17.19",
     "ethers": "5",
@@ -33,6 +34,7 @@
     "react-router-dom": "^6.7.0",
     "react-select": "^5.7.3",
     "rollup-plugin-node-polyfills": "^0.2.1",
+    "snarkjs": "^0.7.0",
     "vite-tsconfig-paths": "^4.2.0",
     "wagmi": "^0.12.12"
   },
@@ -43,6 +45,7 @@
     "@typescript-eslint/eslint-plugin": "^5.57.1",
     "@typescript-eslint/parser": "^5.57.1",
     "@vitejs/plugin-react": "^4.0.0",
+    "circom": "^0.5.46",
     "eslint": "^8.38.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",

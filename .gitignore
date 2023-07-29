@@ -1,0 +1,9 @@
+*.ptau
+challenge_*
+response_*
+input.json
+*.r1cs
+*.r1cs.json
+*.sym
+/circuit_js
+
