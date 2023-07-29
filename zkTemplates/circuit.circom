@@ -19,7 +19,7 @@ template SignatureVerification() {
     // Prepare inputs for SHA256 hashing
     signal input sha256Input[512];
     
-    component mux = Mux1(512);
+    component mux = Mux1();
     for (var i = 0; i < 256; i++) {
         mux.sel[i] <== i < 256 ? 0 : 1;
         mux.ins[0][i] <== publicKey[i];
