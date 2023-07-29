@@ -7,3 +7,4 @@ input.json
 *.sym
 **/*/circuit_js/*
 
+node_modules
