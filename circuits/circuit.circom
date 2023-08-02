@@ -1,6 +1,5 @@
 pragma circom 2.0.2;
-
-include "./circom-esdsa/circuits/ecdsa.circom";
+include "./packages/circom-ecdsa/circuits/ecdsa.circom";
 
 template SignatureVerification(n, k) {
     // public inputs
