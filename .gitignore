@@ -6,5 +6,6 @@ input.json
 *.r1cs.json
 *.sym
 **/*/circuit_js/*
+build
 
 node_modules
